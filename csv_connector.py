@@ -27,7 +27,12 @@ def join(path1, path2, col_name, join_type):
     for head in header1:
         if col_name == header1[head]:
             if join_type.lower() == "left":
-                for
+                for row1, row2 in rows1, rows2:
+                    rows1[row1.append(row2)]
+
+    print(header1)
+    for _ in rows1:
+        print(_)
 
 
 print("File paths should be provided with the .csv extention")
